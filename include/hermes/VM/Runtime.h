@@ -956,7 +956,8 @@ class HERMES_EMPTY_BASES Runtime : public PointerBase,
       /// increased when an app violated it.  The new depth is 128
       /// larger.  See T46966147 for measurements/calculations indicating
       /// that this limit should still insulate us from native stack overflow.)
-      384
+      /// This used to be 384 and I multiplied it by 5, because why not.
+      1920
 #endif
       ;
 
